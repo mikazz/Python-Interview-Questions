@@ -3,6 +3,7 @@
 
 # What will be the output of the code below? Explain your answer. How would you modify the definition of extendList to produce the presumably desired behavior?
 
+
     def extendList(val, list=[]):
         """
             New default list is created only once when
@@ -42,3 +43,11 @@
     print "list3 = %s" % list3
 
     
+# What will be the output of the code below? Explain your answer. How would you modify the definition of multipliers to produce the presumably desired behavior? (Late binding)
+
+
+def multipliers():
+    return [lambda x : i * x for i in range(4)]
+
+print [m(2) for m in multipliers()]
+

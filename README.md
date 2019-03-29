@@ -80,7 +80,27 @@ print [m(2) for m in multipliers()]
 
         
 # What are metaclasses in Python?
+<<<<<<< HEAD
 
     A metaclass is the class of a class. A class defines how an instance of 
     the class (i.e. an object) behaves while a metaclass defines how a class behaves.
     A class is an instance of a metaclass.
+=======
+    A metaclass is the class of a class. A class defines how an instance of the class (i.e. an object) behaves while a metaclass defines how a class behaves. A class is an instance of a metaclass.
+
+
+
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99. Find the largest palindrome made from the product of two 3-digit numbers.
+    def is_palindrome(c):
+        return int(str(c)[::-1]) == c
+
+    maxpal = 0
+    for a in range(999, 99, -1):
+        for b in range(a, 99, -1):
+            prod = a * b
+            if is_palindrome(prod) and prod > maxpal:
+                maxpal = prod
+
+    print(maxpal)
+
+>>>>>>> 1c7b0ad7576cfc0357befe716e035adad0fa0f35

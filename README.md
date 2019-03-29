@@ -66,6 +66,7 @@ print [m(2) for m in multipliers()]
     considered an exception raised by the inner block and the else block won’t run.
     try:
         a = function1()
+        
         try:
             b = function2(a)
         except IndexError:
@@ -79,3 +80,7 @@ print [m(2) for m in multipliers()]
 
         
 # What are metaclasses in Python?
+
+    A metaclass is the class of a class. A class defines how an instance of 
+    the class (i.e. an object) behaves while a metaclass defines how a class behaves.
+    A class is an instance of a metaclass.
